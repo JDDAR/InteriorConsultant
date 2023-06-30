@@ -1,0 +1,239 @@
+.contenidoHome {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.infoHome {
+    color: var(--color-second);
+    padding-top: 30vh;
+    width: 80%;
+}
+
+.infoHome h1 {
+    font-family: var(--font-crimson);
+    font-weight: var(--font-crimson-medium);
+    font-size: 48px;
+    margin-bottom: 35px;
+}
+
+.textHome {
+    font-family: var(--font-montserrat);
+    font-size: 24px;
+    width: 90%;
+    margin-bottom: 35px;
+}
+
+.infoHome a {
+    font-family: var(--font-montserrat);
+    font-weight: var(--font-montserrat-bold);
+    text-decoration: none;
+    color: var(--color-second);
+}
+
+.imgHome {
+    grid-column: 2 / 4;
+    padding-top: 5%;
+    position: relative;
+    height: auto;
+}
+
+.imgHome img {
+    position: absolute;
+    width: 90%;
+    right: 0;
+}
+
+.userDesigned {
+    position: absolute;
+    width: 40%;
+    height: auto;
+    background: var(--color-primary);
+    bottom: 0;
+    right: 50px;
+    padding: 25px;
+    color: var(--color-second);
+    box-shadow: 0px 4px 4px black;
+}
+
+.UserHeader {
+    display: block;
+}
+
+.UserHeader img.avataruser {
+    position: relative;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.UserHeader img.avataruser,
+.UserHeader p {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.UserHeader p {
+    font-family: var(--font-montserrat);
+    font-weight: var(--font-montserrat-bold);
+    width: 60%;
+    font-size: 14px;
+    line-height: 1.5rem;
+    padding-left: 15px;
+}
+
+.UserHeader span {
+    font-size: 12px;
+    color: var(--color-third);
+}
+
+.userProfesion {
+    font-family: var(--font-crimson);
+    padding-top: 10px;
+    font-size: 24px;
+}
+
+@media only screen and (max-width:1600px) {
+    .userDesigned {
+        width: 50%;
+    }
+
+    .infoHome {
+        padding-top: 25vh;
+    }
+
+}
+
+@media only screen and (max-width:1400px) {
+    .userDesigned {
+        width: 50%;
+    }
+
+    .infoHome {
+        padding-top: 25vh;
+        width: 90%;
+    }
+
+    .imgHome {
+        height: 70vh;
+    }
+
+    .userProfesion {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width:1280px) {
+
+    .infoHome {
+        padding-top: 20vh;
+        width: 90%;
+    }
+
+    .imgHome {
+        height: 70vh;
+        padding-top: 10%;
+    }
+
+
+}
+
+@media only screen and (max-width:1000px) {
+
+    .infoHome {
+        padding-top: 10vh;
+        width: 100%;
+    }
+
+    .imgHome {
+        height: auto;
+        padding-top: 15%;
+    }
+
+    .userProfesion {
+        font-size: 14px;
+    }
+
+
+}
+
+
+@media only screen and (max-width:900px) {
+    .contenidoHome {
+        display: block;
+    }
+
+    .imgHome {
+        height: 70vh;
+        padding-top: 0%;
+    }
+
+    .imgHome img {
+        width: 100%;
+    }
+
+    .userDesigned {
+        right: 25%;
+    }
+
+    .infoHome {
+        margin-bottom: 50px;
+    }
+
+    .textHome {
+        font-size: 20px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:700px) {
+
+    .userDesigned {
+        position: relative;
+        right: auto;
+        width: 80%;
+        margin: auto;
+        top: 35vh;
+    }
+
+    .infoHome {
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .userDesigned {
+        width: 90%;
+        top: 30vh;
+    }
+
+    .infoHome {
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width:300px) {
+    .userDesigned {
+        width: 90%;
+        top: 18vh;
+    }
+
+    .UserHeader span {
+        font-size: 10px;
+    }
+
+    .infoHome h1 {
+        font-size: 32px;
+    }
+
+    .textHome {
+        font-size: 12px;
+        width: 100%;
+    }
+
+    .userProfesion {
+        font-size: 12px;
+    }
+
+}
